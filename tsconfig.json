@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowJs": true
+  },
+  "include": ["./src/**/**/*"]
+}
