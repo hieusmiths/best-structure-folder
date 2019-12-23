@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface HelloProps {
   compiler: string;
-  framework: string;
+  framework?: string;
 }
 
 const Hello = (props: HelloProps) => (

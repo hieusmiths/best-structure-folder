@@ -2,6 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "noImplicitAny": true,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "module": "commonjs",
@@ -9,7 +10,7 @@
     "target": "es6",
     "jsx": "react",
     "moduleResolution": "node",
-    "allowJs": true
-  },
-  "include": ["./src/**/**/*"]
+    "allowJs": true,
+    "strict": true
+  }
 }

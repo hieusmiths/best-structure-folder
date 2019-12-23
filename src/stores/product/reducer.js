@@ -1,4 +1,4 @@
-import { PRODUCT_CATEGORY_GET_LIST } from './actionType';
+import { PRODUCT_CATEGORY_GET_LIST } from './type';
 
 const initState = { listCategory: [] };
 export default function reducer(state = initState, action) {

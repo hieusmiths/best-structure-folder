@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 module.exports = {
   entry: {
     app: ['./src/index.tsx', 'webpack-hot-middleware/client'],
@@ -9,6 +8,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'js/[name].bundle.js',
+    publicPath: '/'
   },
   // Enable sourcemaps for debugging webpack's output.
   devtool: 'inline-source-map',
@@ -51,7 +51,8 @@ module.exports = {
 
   devServer: {
     publicPath: '/',
+    historyApiFallback: true,
     overlay: true,
-    port: 4000,
+    port: 3000,
   },
 };
